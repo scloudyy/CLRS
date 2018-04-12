@@ -10,6 +10,9 @@ void insertion_sort(vector<int> &arr) {
         auto i = j - 1;
         while(i >= arr.begin() && key < *i) {
             *(i + 1) = *i;
+            if (i == arr.begin()) {
+				break;
+			}
             i--;
         }
         *(i + 1) = key;

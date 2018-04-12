@@ -1,5 +1,6 @@
 #include <vector>
 #include <limits>
+#include <iostream>
 
 using namespace std;
 
@@ -40,4 +41,6 @@ void merge_sort(vector<int>::iterator begin,
 int main(int argc, char **argv) {
     vector<int> arr{3, 2, 4, 7, 9, 10, -2, 11, 8, 1, 0};
     merge_sort(arr.begin(), arr.end());
+	for (auto i : arr)
+		cout << i << endl;
 }
